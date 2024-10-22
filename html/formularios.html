@@ -12,12 +12,17 @@
                 <legend>Datos personales</legend>
                 <p>
                     <label for="nombre">Nombre: </label>
-                    <input id="Nombre" name="Nombre" required>
+                    <input id="Nombre" name="Nombre" required maxlength="6" placeholder="Escriba su nombre completo">
                 </p>
                 
                 <p>
+                    <label for="pob">Población</label>
+                    <input type="text" value="Alcázar de San Juan" maxlength="50" name="pob" id="pob" autofocus>
+                </p>
+
+                <p>
                     <label for="Contraseña">Contraseña: </label>    
-                    <input type="password" id="Contraseña" name="Contraseña" required>
+                    <input type="password" id="Contraseña" name="Contraseña" maxlength="6" minlength="4">
                 </p>
                 <p>
                     <label for="Hombre">Hombre:</label>
@@ -61,6 +66,10 @@
             <p>
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email">
+            </p>
+                        <p>
+                <label for="foto">Adjuntar una foto: </label>
+                <input type="file" name="foto" id="foto">
             </p>
             <p>
                 <input type="submit" value="Enviar">
